@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "krowten",
+  "description": "Claude Code plugins by krowten.",
+  "owner": {
+    "name": "krowten",
+    "email": "me@krowten.dev"
+  },
+  "plugins": [
+    {
+      "name": "media-generation",
+      "description": "Image, SVG and video generation for Claude Code: GPT Image 2.5, Nano Banana 2.1, Recraft, MiniMax H3 Max, Kling, Seedance and Veo via fal.ai, plus offline image and video post-processing for web design, including scroll- and cursor-driven animation.",
+      "source": "./",
+      "category": "productivity",
+      "version": "1.0.0"
+    }
+  ]
+}

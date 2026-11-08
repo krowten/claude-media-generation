@@ -1,0 +1,34 @@
+{
+  "name": "media-generation",
+  "displayName": "Media Generation",
+  "version": "1.0.0",
+  "description": "Image, SVG and video generation for Claude Code: GPT Image 2.5, Nano Banana 2.1, Recraft, MiniMax H3 Max, Kling, Seedance and Veo via fal.ai, plus offline image and video post-processing for web design, including scroll- and cursor-driven animation.",
+  "author": {
+    "name": "krowten",
+    "email": "me@krowten.dev"
+  },
+  "homepage": "https://github.com/krowten/claude-media-generation",
+  "repository": "https://github.com/krowten/claude-media-generation",
+  "documentationUrl": "https://github.com/krowten/claude-media-generation#readme",
+  "supportUrl": "https://github.com/krowten/claude-media-generation/issues",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-skills",
+    "image-generation",
+    "video-generation",
+    "svg",
+    "logo-generation",
+    "nano-banana",
+    "gpt-image",
+    "recraft",
+    "kling",
+    "seedance",
+    "scroll-animation",
+    "veo",
+    "fal-ai",
+    "background-removal",
+    "ffmpeg",
+    "web-design"
+  ]
+}

@@ -1,0 +1,16 @@
+node_modules
+bun.lock
+
+# Owner's private working notes — not part of the release
+TODO.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Never commit a FAL_KEY — the skills read it from the environment, not from a file
+.env
+.env.*
+
+# Plugin eval run output
+evals/results/

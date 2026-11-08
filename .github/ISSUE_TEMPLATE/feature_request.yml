@@ -1,0 +1,20 @@
+name: Feature request
+description: A new capability, model or website effect
+labels: [enhancement]
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What are you trying to make?
+      description: The result you want. A link to a page that does it helps.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: What happens today?
+      description: What Claude does with the plugin now, and where that falls short.
+  - type: input
+    id: model
+    attributes:
+      label: Model or fal.ai endpoint, if you have one in mind

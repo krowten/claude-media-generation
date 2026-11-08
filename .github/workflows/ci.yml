@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: oven-sh/setup-bun@v2
+        with:
+          # Bun.Image, which process-image relies on, ships with Bun 1.4.
+          bun-version: 1.4.2
+      - name: Install ffmpeg for the process-video tests
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+      - run: bun install
+      - run: bun run check

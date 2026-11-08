@@ -1,0 +1,40 @@
+name: Bug report
+description: A skill failed or did the wrong thing
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Remove your `FAL_KEY` and anything private from logs before posting. If a paid result was lost, include the request ID the command printed.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you asked Claude to do, and what happened instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      options:
+        - generate-image
+        - generate-svg
+        - generate-video
+        - process-image
+        - process-video
+        - Install or something else
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Command and error output
+      render: shell
+  - type: input
+    id: versions
+    attributes:
+      label: Versions and OS
+      description: Output of `claude --version` and `bun --version`, your OS, and `ffmpeg -version` for video.
+      placeholder: Claude Code 2.1.316, Bun 1.4.4, macOS 26, ffmpeg 7.1
+    validations:
+      required: true
