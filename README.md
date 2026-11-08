@@ -5,6 +5,8 @@ plugin adds that. Ask for a hero image, an SVG logo or a looping background vide
 writes the file into your project. Generation runs on fal.ai (GPT Image 2.5, Nano Banana 2.1, Recraft,
 MiniMax H3 Max, Kling, Seedance, Veo); resizing, conversion and compression run locally, so the result is ready to ship.
 
+<img width="960" alt="Claude Code on the left generates a looping hero video and an SVG logo from one prompt; the coffee shop page on the right fills in as the files arrive" src="https://github.com/user-attachments/assets/6243e8c4-3003-4da8-b7a1-cba295910f29" />
+
 | Skill | What it does |
 | --- | --- |
 | `generate-image` | Generate images from a prompt with GPT Image 2.5 or Nano Banana 2.1, edit an existing image, remove backgrounds |
@@ -12,6 +14,10 @@ MiniMax H3 Max, Kling, Seedance, Veo); resizing, conversion and compression run 
 | `generate-video` | Text-to-video, image-to-video, transitions, multi-keyframe clips and seamless loops with MiniMax H3 Max, Kling 4 or Seedance 2.5, extend a clip with Veo 3.1 |
 | `process-image` | Resize, convert to WebP/AVIF, rotate/flip, adjust colors, blur-up placeholders, PNGs and favicons from SVG. Free and offline |
 | `process-video` | Poster frames, WebM/AV1 encodes, compression, trims, seamless loops, frame sequences for scroll and cursor animation, reverse/ping-pong, joins. Free and offline (ffmpeg) |
+
+Three prompts build a whole landing page, with every image, logo and video made by the plugin:
+
+https://github.com/user-attachments/assets/ef9af96a-e7b0-4601-903f-a44cc9d7098e
 
 ## Can Claude generate images?
 
