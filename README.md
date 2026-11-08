@@ -52,7 +52,7 @@ curl -fsSL https://bun.com/install | bash   # macOS and Linux (needs unzip)
 powershell -c "irm bun.sh/install.ps1|iex"  # Windows
 ```
 
-Then install the plugin (Claude Code 2.1.275 or later):
+Then install the plugin (Claude Code 2.1.292 or later):
 
 ```sh
 claude plugin install media-generation --marketplace krowten/claude-media-generation
@@ -135,6 +135,9 @@ with the shortest duration that shows the motion.
   command prints a temporary result URL, so a fresh `generate-video` clip can go straight into `extend`
   if it is 16:9 or 9:16 (Veo doesn't extend 1:1) and 3 to 10 seconds long. The other commands accept
   a local file (sent as a data URI) or a URL.
+- What leaves your machine: `generate-image`, `generate-svg` and `generate-video` send your prompts and
+  source images to fal.ai, with your `FAL_KEY`. Bun downloads the npm dependencies from the npm registry
+  on first use. The plugin has no telemetry. See [SECURITY.md](SECURITY.md) for details.
 - Claude keeps work files out of your project: the raw clip as fal.ai returned it, contact sheets and
   previews go in `.media-generation/` (git never sees it), or in `media-generation/` inside your own
   scratch folder if the project has one. The raw clips are worth keeping, since re-encoding one later
