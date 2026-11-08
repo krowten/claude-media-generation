@@ -11,6 +11,7 @@
   "repository": "https://github.com/krowten/claude-media-generation",
   "documentationUrl": "https://github.com/krowten/claude-media-generation#readme",
   "supportUrl": "https://github.com/krowten/claude-media-generation/issues",
+  "privacyPolicyUrl": "https://github.com/krowten/claude-media-generation/blob/main/SECURITY.md#what-the-plugin-does-with-your-data",
   "license": "MIT",
   "keywords": [
     "claude-code",

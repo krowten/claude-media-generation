@@ -20,7 +20,8 @@ Only the latest release gets security fixes.
   dependencies the first time a script needs them.
 - Generated and vectorized SVGs are checked before saving. A file with scripts, event handlers,
   `foreignObject` or external links is rejected.
-- The plugin has no telemetry.
+- The plugin has no telemetry, and neither the plugin nor its author collects or stores your data. What
+  fal.ai does with it is covered by the [fal.ai privacy policy](https://fal.ai/privacy).
 
 ## Scope
 

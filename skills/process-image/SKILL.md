@@ -2,7 +2,6 @@
 name: process-image
 description: Resize, convert, rotate, flip, color-adjust, or inspect a local image file (JPEG/PNG/WebP/AVIF, or an SVG rendered to pixels) and make blur-up placeholders — thumbnails, avatars, hero images, fitting an image into a layout, converting between formats, orientation fixes, brightness/saturation tweaks, checking dimensions/size. Runs entirely offline via Bun's native image API, no network call and no fal.ai credit spent. Use whenever the user wants to resize, shrink, convert, re-encode, compress, rotate, mirror, brighten/desaturate an image they already have, needs an LQIP/blur-up placeholder, or needs a PNG/favicon/preview from an SVG logo — even if they just paste a path and say "make this smaller".
 compatibility: Claude Code with Bun 1.4 or later. Offline; no API key.
-allowed-tools: Bash(bun ${CLAUDE_SKILL_DIR}/scripts/process-image.ts *)
 ---
 
 # process-image

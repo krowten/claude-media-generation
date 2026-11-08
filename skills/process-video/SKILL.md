@@ -2,7 +2,6 @@
 name: process-video
 description: Process a local video file with ffmpeg — extract a poster frame for <video poster>, re-encode to WebM/VP9 or AV1 for smaller web delivery, compress an oversized clip, trim to the segment that matters, strip an unwanted audio track, make a looping clip wrap without a visible jump, export a frame sequence for scroll- or cursor-driven animation, reverse or ping-pong a clip, join clips, inspect duration/codec/size, or check a clip with a contact sheet and a motion timeline. Runs entirely offline, no fal.ai credit spent. Use whenever the user wants to convert, compress, shrink, trim, cut, mute, or get info about a video they already have — including making a generated generate-video clip actually shippable on a web page, fixing a loop that jumps or stutters where it repeats, and preparing a clip for a page that plays it by scroll position or cursor ("scroll animation from this video", "Apple-style scroll sequence").
 compatibility: Claude Code with Bun 1.4 or later and ffmpeg/ffprobe on PATH. Offline; no API key.
-allowed-tools: Bash(bun ${CLAUDE_SKILL_DIR}/scripts/process-video.ts *)
 ---
 
 # process-video
