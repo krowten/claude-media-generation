@@ -12,10 +12,9 @@ Wraps Bun's native `Bun.Image` API (statically linked libjpeg-turbo/spng/libwebp
 bun ${CLAUDE_SKILL_DIR}/scripts/process-image.ts <command> ...
 ```
 
-If the shell says `bun` isn't found, Bun isn't installed. Stop and give the user the command, offering to
-run it: `curl -fsSL https://bun.com/install | bash` on macOS and Linux, `powershell -c "irm bun.sh/install.ps1|iex"`
-on Windows. Claude Code then needs a restart to see it. Don't replace the script with curl, ImageMagick,
-ffmpeg or code of your own: the checks it runs before a paid call and on the result would be lost.
+If the shell says `bun` isn't found, Bun isn't installed. Stop and ask the user to install it from
+https://bun.com/docs/installation and restart Claude Code. Don't replace the script with other tools or
+code of your own: the checks it runs before a paid call and on the result would be lost.
 
 If you're about to generate a *new* image and just want it encoded a particular way, don't chain `generate` → `process-image convert/resize` — the `generate-image generate`/`edit` commands already take `--format` / `--output-quality` / `--max-width` and do it in one step. Reach for `process-image` for images that already exist on disk.
 

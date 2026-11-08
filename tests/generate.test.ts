@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { file, Image, write } from 'bun'
 
-import { runSkill } from './run'
+import { runSkill, pixelPng } from './run'
 
 let dir: string
 let photo: string
@@ -28,7 +28,7 @@ function generate(skill: string, args: string[], mode = '', fixture = photo, env
 beforeAll(async () => {
   dir = await mkdtemp(join(tmpdir(), 'claude-media-generation-generate-'))
   photo = join(dir, 'photo.png')
-  await new Image(join(import.meta.dir, 'fixtures/pixel.png')).resize(640, 480, { fit: 'fill' }).png().write(photo)
+  await new Image(pixelPng).resize(640, 480, { fit: 'fill' }).png().write(photo)
 })
 
 afterAll(() => rm(dir, { recursive: true, force: true }))

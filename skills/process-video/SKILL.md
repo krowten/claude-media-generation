@@ -15,10 +15,9 @@ instead of hunting for a workaround.
 bun ${CLAUDE_SKILL_DIR}/scripts/process-video.ts <command> ...
 ```
 
-If the shell says `bun` isn't found, Bun isn't installed. Stop and give the user the command, offering to
-run it: `curl -fsSL https://bun.com/install | bash` on macOS and Linux, `powershell -c "irm bun.sh/install.ps1|iex"`
-on Windows. Claude Code then needs a restart to see it. Don't replace the script with curl, ImageMagick,
-ffmpeg or code of your own: the checks it runs before a paid call and on the result would be lost.
+If the shell says `bun` isn't found, Bun isn't installed. Stop and ask the user to install it from
+https://bun.com/docs/installation and restart Claude Code. Don't replace the script with other tools or
+code of your own: the checks it runs before a paid call and on the result would be lost.
 
 This is the post-production half of the video pipeline: `generate-video` generates a clip, `process-video`
 makes it shippable. A generated MP4 dropped straight into a page is usually 2–4x larger than the

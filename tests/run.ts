@@ -4,6 +4,12 @@ import { spawnSync } from 'bun'
 const root = new URL('..', import.meta.url).pathname
 const mockProvider = `${root}tests/mock-provider.ts`
 
+// A 1x1 PNG inlined so the plugin ships no binary test fixture.
+export const pixelPng = Buffer.from(
+  'iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVR4nGP8z8Dwn4GBgYGRAcT4z8AAACcGA/+V7GS1AAAAAElFTkSuQmCC',
+  'base64',
+)
+
 export type RunResult = { code: number; stdout: string; stderr: string }
 
 // Runs a skill script the way Claude does, with the generation SDK mocked out for generate-* skills.

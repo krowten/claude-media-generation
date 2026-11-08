@@ -15,10 +15,9 @@ Run it with Bash, e.g.:
 bun ${CLAUDE_SKILL_DIR}/scripts/generate-image.ts generate --prompt "..." --output ./out.png
 ```
 
-If the shell says `bun` isn't found, Bun isn't installed. Stop and give the user the command, offering to
-run it: `curl -fsSL https://bun.com/install | bash` on macOS and Linux, `powershell -c "irm bun.sh/install.ps1|iex"`
-on Windows. Claude Code then needs a restart to see it. Don't replace the script with curl, ImageMagick,
-ffmpeg or code of your own: the checks it runs before a paid call and on the result would be lost.
+If the shell says `bun` isn't found, Bun isn't installed. Stop and ask the user to install it from
+https://bun.com/docs/installation and restart Claude Code. Don't replace the script with other tools or
+code of your own: the checks it runs before a paid call and on the result would be lost.
 
 The script prints the final path, dimensions, and byte size — that's the confirmation the file exists; no need for a separate `ls`/read-back step unless you need to inspect pixels.
 

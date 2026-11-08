@@ -45,12 +45,8 @@ You don't have to name a skill: Claude picks one from what you ask, for example:
 
 ## Install
 
-The skills run on [Bun](https://bun.com) 1.4 or later. If you don't have it yet, install it first:
-
-```sh
-curl -fsSL https://bun.com/install | bash   # macOS and Linux (needs unzip)
-powershell -c "irm bun.sh/install.ps1|iex"  # Windows
-```
+The skills run on [Bun](https://bun.com) 1.4 or later. If you don't have it yet,
+[install it first](https://bun.com/docs/installation).
 
 Then install the plugin (Claude Code 2.1.292 or later):
 
